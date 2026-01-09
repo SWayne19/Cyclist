@@ -14,29 +14,46 @@
           <div class="navbar-brand">
             <a href="#">Cyclist</a>
           </div>
-          <ul class="navbar-menu">
-            <li><a href>Home</a></li>
-            <li><a href>Collection</a></li>
-            <li><a href>Product</a></li>
-            <li><a href>Blog</a></li>
-          </ul>
-          <ul class="navbar-icon">
-            <li class="search">
-              <input type="text" placeholder="search" />
-              <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </li>
-            <li>
-              <a href><i class="fa-solid fa-user"></i></a>
-            </li>
-            <li>
-              <a href><i class="fa-solid fa-heart"></i></a>
-            </li>
-            <li>
-              <a href><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
-          </ul>
+          <button class="navbar-toggle" id="navbarToggle"
+            aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-wrapper">
+            <ul class="navbar-menu">
+              <li><a href="#slider">Home</a></li>
+              <li><a href="#collection">Collection</a></li>
+              <li><a href="#products">Product</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+            <ul class="navbar-icon">
+              <li class="search">
+                <button class="search-toggle" id="searchToggle"
+                  aria-label="Toggle search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="search-box">
+                  <input type="text" placeholder="Search..." id="searchInput" />
+                  <button type="submit" class="search-submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </li>
+              <li>
+                <a href="#" aria-label="User account"><i
+                    class="fa-solid fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Wishlist"><i
+                    class="fa-solid fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Shopping cart"><i
+                    class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -57,10 +74,12 @@
       <section id="new-arrival" class="products">
         <div class="container">
           <h2 class="text-center">New Arrivals</h2>
-          <p class="text-center mb">Discover the latest models of innovative bikes, ready to elevate your ride this season!</p>
+          <p class="text-center mb">Discover the latest models of innovative
+            bikes, ready to elevate your ride this season!</p>
           <div class="cards">
             <div class="card">
-              <img src="assets/images/arrival1.avif" alt="Canyon Endurace CF SLX 8 Di2" />
+              <img src="assets/images/arrival1.avif"
+                alt="Canyon Endurace CF SLX 8 Di2" />
               <div class="content">
                 <h4 class="text-center">Canyon Endurace CF SLX 8 Di2</h4>
                 <div class="rating text-center">
@@ -73,13 +92,16 @@
                 <h4 class="text-center">$4,999</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/arrival2.avif" alt="Trek Marlin 8 Gen 3" />
+              <img src="assets/images/arrival2.avif"
+                alt="Trek Marlin 8 Gen 3" />
               <div class="content">
                 <h4 class="text-center">Trek Marlin 8 Gen 3</h4>
                 <div class="rating text-center">
@@ -92,13 +114,16 @@
                 <h4 class="text-center">$1,329</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/arrival3.avif" alt="Specialized Turbo Vado SL 4.0" />
+              <img src="assets/images/arrival3.avif"
+                alt="Specialized Turbo Vado SL 4.0" />
               <div class="content">
                 <h4 class="text-center">Specialized Turbo Vado SL 4.0</h4>
                 <div class="rating text-center">
@@ -111,13 +136,16 @@
                 <h4 class="text-center">$3,800</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/arrival4.avif" alt="Giant TCR Advanced Pro 1 Disc" />
+              <img src="assets/images/arrival4.avif"
+                alt="Giant TCR Advanced Pro 1 Disc" />
               <div class="content">
                 <h4 class="text-center">Giant TCR Advanced Pro 1 Disc</h4>
                 <div class="rating text-center">
@@ -130,8 +158,10 @@
                 <h4 class="text-center">$5,200</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -144,31 +174,40 @@
         <div class="container">
           <div class="left">
             <div class="card">
-              <img src="assets/images/collection1.avif" alt="Urban Explorer Collection" />
+              <img src="assets/images/collection1.avif"
+                alt="Urban Explorer Collection" />
               <div class="content">
                 <h3>Urban Explorer Collection</h3>
                 <p>
-                  Designed for city riders, our Urban Explorer Collection pairs lightweight frames with modern aesthetics. Move fast, look sharp, and experience city cycling like never before!
+                  Designed for city riders, our Urban Explorer Collection pairs
+                  lightweight frames with modern aesthetics. Move fast, look
+                  sharp, and experience city cycling like never before!
                 </p>
               </div>
             </div>
           </div>
           <div class="right">
             <div class="card">
-              <img src="assets/images/collection2.avif" alt="Adventure Series" />
+              <img src="assets/images/collection2.avif"
+                alt="Adventure Series" />
               <div class="content">
                 <h3>Adventure Series</h3>
                 <p>
-                  Take on rugged trails with our Adventure Series. Built for durability and comfort, these bikes keep you exploring whether it’s mountain paths or country roads.
+                  Take on rugged trails with our Adventure Series. Built for
+                  durability and comfort, these bikes keep you exploring whether
+                  it’s mountain paths or country roads.
                 </p>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/collection3.avif" alt="Performance Road Collection" />
+              <img src="assets/images/collection3.avif"
+                alt="Performance Road Collection" />
               <div class="content">
                 <h3>Performance Road Collection</h3>
                 <p>
-                  Discover speed with our Performance Road bikes. Engineered for racers and long-distance cyclists, they deliver uncompromised precision and aerodynamic form.
+                  Discover speed with our Performance Road bikes. Engineered for
+                  racers and long-distance cyclists, they deliver uncompromised
+                  precision and aerodynamic form.
                 </p>
               </div>
             </div>
@@ -180,7 +219,8 @@
       <section id="products" class="products">
         <div class="container">
           <h2 class="text-center">Popular Products</h2>
-          <p class="text-center mb">Discover our best-selling bikes and top-rated cycling gear.</p>
+          <p class="text-center mb">Discover our best-selling bikes and
+            top-rated cycling gear.</p>
           <div class="filerable-btns">
             <button class="active">All</button>
             <button>Road</button>
@@ -189,7 +229,8 @@
           </div>
           <div class="cards">
             <div class="card">
-              <img src="assets/images/product1.avif" alt="Giant Defy Advanced 1" />
+              <img src="assets/images/product1.avif"
+                alt="Giant Defy Advanced 1" />
               <div class="content">
                 <h4 class="text-center">Giant Defy Advanced 1</h4>
                 <div class="rating text-center">
@@ -202,8 +243,10 @@
                 <h4 class="text-center">$2,550</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -221,13 +264,16 @@
                 <h4 class="text-center">$3,799</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/product3.avif" alt="Brompton C Line Explore" />
+              <img src="assets/images/product3.avif"
+                alt="Brompton C Line Explore" />
               <div class="content">
                 <h4 class="text-center">Brompton C Line Explore</h4>
                 <div class="rating text-center">
@@ -240,13 +286,16 @@
                 <h4 class="text-center">$1,850</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/product4.avif" alt="Cannondale Quick CX 3" />
+              <img src="assets/images/product4.avif"
+                alt="Cannondale Quick CX 3" />
               <div class="content">
                 <h4 class="text-center">Cannondale Quick CX 3</h4>
                 <div class="rating text-center">
@@ -259,15 +308,18 @@
                 <h4 class="text-center">$975</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
           </div>
           <div class="cards">
             <div class="card">
-              <img src="assets/images/product5.avif" alt="Specialized Sirrus X 4.0" />
+              <img src="assets/images/product5.avif"
+                alt="Specialized Sirrus X 4.0" />
               <div class="content">
                 <h4 class="text-center">Specialized Sirrus X 4.0</h4>
                 <div class="rating text-center">
@@ -280,13 +332,16 @@
                 <h4 class="text-center">$1,400</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/product6.avif" alt="Santa Cruz Chameleon" />
+              <img src="assets/images/product6.avif"
+                alt="Santa Cruz Chameleon" />
               <div class="content">
                 <h4 class="text-center">Santa Cruz Chameleon</h4>
                 <div class="rating text-center">
@@ -299,13 +354,16 @@
                 <h4 class="text-center">$2,600</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/product7.avif" alt="All-City Space Horse" />
+              <img src="assets/images/product7.avif"
+                alt="All-City Space Horse" />
               <div class="content">
                 <h4 class="text-center">All-City Space Horse</h4>
                 <div class="rating text-center">
@@ -318,8 +376,10 @@
                 <h4 class="text-center">$1,700</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -337,15 +397,18 @@
                 <h4 class="text-center">$950</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
           </div>
           <div class="cards">
             <div class="card">
-              <img src="assets/images/product9.avif" alt="Bianchi Impulso Allroad" />
+              <img src="assets/images/product9.avif"
+                alt="Bianchi Impulso Allroad" />
               <div class="content">
                 <h4 class="text-center">Bianchi Impulso Allroad</h4>
                 <div class="rating text-center">
@@ -358,8 +421,10 @@
                 <h4 class="text-center">$2,100</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -377,8 +442,10 @@
                 <h4 class="text-center">$5,099</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -396,8 +463,10 @@
                 <h4 class="text-center">$700</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -415,8 +484,10 @@
                 <h4 class="text-center">$950</h4>
               </div>
               <div class="actions">
-                <span title="Add to wishlist"><i class="fa-solid fa-heart"></i></span>
-                <span title="Add to cart"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span title="Add to wishlist"><i
+                    class="fa-solid fa-heart"></i></span>
+                <span title="Add to cart"><i
+                    class="fa-solid fa-bag-shopping"></i></span>
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
@@ -428,14 +499,18 @@
       <section id="blog">
         <div class="container">
           <h2 class="text-center">Enjoy Our Blogs</h2>
-          <p class="text-center mb">Get the latest cycling tips, stories, and reviews from our team of enthusiasts.</p>
+          <p class="text-center mb">Get the latest cycling tips, stories, and
+            reviews from our team of enthusiasts.</p>
           <div class="cards">
             <div class="card">
-              <img src="assets/images/blog1.webp" alt="Cycling Through the Seasons" />
+              <img src="assets/images/blog1.webp"
+                alt="Cycling Through the Seasons" />
               <div class="content">
                 <h4>Cycling Through the Seasons: Essential Tips</h4>
                 <p>
-                  Stay comfortable year-round! Learn how to dress for every season, adapt to changing weather, and keep your rides enjoyable in sun or snow.
+                  Stay comfortable year-round! Learn how to dress for every
+                  season, adapt to changing weather, and keep your rides
+                  enjoyable in sun or snow.
                 </p>
                 <span class="date">08 March</span>
               </div>
@@ -445,17 +520,22 @@
               <div class="content">
                 <h4>Bike Maintenance 101: Keep Your Ride Smooth</h4>
                 <p>
-                  Regular bike care keeps you safe and saves money. Discover easy at-home fixes and know when it’s time to visit your local bike shop.
+                  Regular bike care keeps you safe and saves money. Discover
+                  easy at-home fixes and know when it’s time to visit your local
+                  bike shop.
                 </p>
                 <span class="date">18 March</span>
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/blog3.jpg" alt="Top Cycling Destinations" />
+              <img src="assets/images/blog3.jpg"
+                alt="Top Cycling Destinations" />
               <div class="content">
                 <h4>Top 5 Cycling Destinations in Southeast Asia</h4>
                 <p>
-                  From the hills of Myanmar to the beaches of Thailand, explore our favorite routes throughout Southeast Asia for breathtaking cycling adventures.
+                  From the hills of Myanmar to the beaches of Thailand, explore
+                  our favorite routes throughout Southeast Asia for breathtaking
+                  cycling adventures.
                 </p>
                 <span class="date">05 April</span>
               </div>
@@ -468,7 +548,8 @@
       <section id="news-letter">
         <div class="container">
           <h2 class="text-center">Subscribe To Our Newsletter</h2>
-          <p class="text-center mb">Receive cycling news, product updates, and exclusive deals right in your inbox.</p>
+          <p class="text-center mb">Receive cycling news, product updates, and
+            exclusive deals right in your inbox.</p>
           <form action>
             <input type="email" placeholder="Your email address" required />
             <button type="submit">Subscribe</button>
@@ -482,10 +563,13 @@
           <ul>
             <li><h4>About Us</h4></li>
             <li>
-              Cyclist is dedicated to connecting people with the joy of two wheels. Since 2015, we’ve provided top bikes, expert advice, and a vibrant community for all levels of cyclists.
+              Cyclist is dedicated to connecting people with the joy of two
+              wheels. Since 2015, we’ve provided top bikes, expert advice, and a
+              vibrant community for all levels of cyclists.
             </li>
             <li>
-              <img src="assets/images/pay1.avif" alt="Visa and MasterCard payments">
+              <img src="assets/images/pay1.avif"
+                alt="Visa and MasterCard payments">
               <img src="assets/images/pay2.jpg" alt="Other payment options">
             </li>
           </ul>
@@ -498,13 +582,17 @@
           </ul>
           <ul>
             <li><h4>Contact Info</h4></li>
-            <li>Email: <a href="mailto:cyclist@gmail.com">cyclist@gmail.com</a></li>
+            <li>Email: <a
+                href="mailto:cyclist@gmail.com">cyclist@gmail.com</a></li>
             <li>Phone: +95 9 123 456 789</li>
             <li>Address: Ahlone, Yangon, Myanmar</li>
             <li class="social-medias">
-              <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-              <a href="https://youtube.com/" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-              <a href="https://tiktok.com/" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://youtube.com/" target="_blank" rel="noopener"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="https://tiktok.com/" target="_blank" rel="noopener"><i
+                  class="fab fa-tiktok"></i></a>
             </li>
           </ul>
         </div>
