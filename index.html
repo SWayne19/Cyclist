@@ -60,12 +60,27 @@
       <!-- slide image section -->
       <section id="slider">
         <div class="container">
-          <img src="assets/images/slide1.avif" alt />
+          <div class="slider-track">
+            <div class="slide active">
+              <img src="assets/images/slide1.avif" alt="Slide 1" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/slide2.avif" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/slide3.avif" alt="Slide 3" />
+            </div>
+          </div>
           <div class="controls">
             <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
             <button class="next">
               <i class="fa-solid fa-arrow-right"></i>
             </button>
+          </div>
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
           </div>
         </div>
       </section>
@@ -222,13 +237,13 @@
           <p class="text-center mb">Discover our best-selling bikes and
             top-rated cycling gear.</p>
           <div class="filerable-btns">
-            <button class="active">All</button>
-            <button>Road</button>
-            <button>Mountain</button>
-            <button>City</button>
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="road">Road</button>
+            <button data-filter="mountain">Mountain</button>
+            <button data-filter="city">City</button>
           </div>
           <div class="cards">
-            <div class="card">
+            <div class="card" data-category="road">
               <img src="assets/images/product1.avif"
                 alt="Giant Defy Advanced 1" />
               <div class="content">
@@ -250,7 +265,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="mountain">
               <img src="assets/images/product2.avif" alt="Trek Fuel EX 8" />
               <div class="content">
                 <h4 class="text-center">Trek Fuel EX 8</h4>
@@ -271,7 +286,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="city">
               <img src="assets/images/product3.avif"
                 alt="Brompton C Line Explore" />
               <div class="content">
@@ -293,7 +308,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="city">
               <img src="assets/images/product4.avif"
                 alt="Cannondale Quick CX 3" />
               <div class="content">
@@ -315,9 +330,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-          </div>
-          <div class="cards">
-            <div class="card">
+            <div class="card" data-category="road">
               <img src="assets/images/product5.avif"
                 alt="Specialized Sirrus X 4.0" />
               <div class="content">
@@ -339,7 +352,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="mountain">
               <img src="assets/images/product6.avif"
                 alt="Santa Cruz Chameleon" />
               <div class="content">
@@ -361,7 +374,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="road">
               <img src="assets/images/product7.avif"
                 alt="All-City Space Horse" />
               <div class="content">
@@ -383,7 +396,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="city">
               <img src="assets/images/product8.avif" alt="Raleigh Redux 2" />
               <div class="content">
                 <h4 class="text-center">Raleigh Redux 2</h4>
@@ -404,9 +417,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-          </div>
-          <div class="cards">
-            <div class="card">
+            <div class="card" data-category="road">
               <img src="assets/images/product9.avif"
                 alt="Bianchi Impulso Allroad" />
               <div class="content">
@@ -428,7 +439,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="road">
               <img src="assets/images/product10.avif" alt="Orbea Gain M20" />
               <div class="content">
                 <h4 class="text-center">Orbea Gain M20</h4>
@@ -449,7 +460,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="mountain">
               <img src="assets/images/product11.avif" alt="Fuji Traverse 1.3" />
               <div class="content">
                 <h4 class="text-center">Fuji Traverse 1.3</h4>
@@ -470,7 +481,7 @@
                 <span title="View details"><i class="fas fa-search"></i></span>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-category="city">
               <img src="assets/images/product12.avif" alt="Kona Dew Deluxe" />
               <div class="content">
                 <h4 class="text-center">Kona Dew Deluxe</h4>

@@ -1,4 +1,3 @@
-// Navbar functionality
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("nav");
   const navbarToggle = document.getElementById("navbarToggle");
@@ -29,14 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Close search box when clicking outside
     document.addEventListener("click", function (e) {
       if (!searchBox.contains(e.target) && !searchToggle.contains(e.target)) {
         searchBox.classList.remove("active");
       }
     });
 
-    // Close search box on Escape key
     searchInput.addEventListener("keydown", function (e) {
       if (e.key === "Escape") {
         searchBox.classList.remove("active");
@@ -45,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Close mobile menu when clicking on a link
-  navbarLinks.forEach((link) => {
+  navbarLinks.forEach(function (link) {
     link.addEventListener("click", function () {
       if (window.innerWidth <= 991) {
         navbarToggle.classList.remove("active");
@@ -56,17 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Navbar scroll effect
-  let lastScroll = 0;
   window.addEventListener("scroll", function () {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 50) {
+    if (window.pageYOffset > 50) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
     }
-
-    lastScroll = currentScroll;
   });
 
   // Close mobile menu on window resize
@@ -79,20 +71,90 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
-      const href = this.getAttribute("href");
+      var href = this.getAttribute("href");
       if (href !== "#" && href !== "") {
         e.preventDefault();
-        const target = document.querySelector(href);
+        var target = document.querySelector(href);
         if (target) {
-          const offsetTop = target.offsetTop - 70;
-          window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth",
-          });
+          var offsetTop = target.offsetTop - 70;
+          window.scrollTo({ top: offsetTop, behavior: "smooth" });
         }
       }
+    });
+  });
+
+  // Slideshow
+  var slides = document.querySelectorAll("#slider .slide");
+  var dots = document.querySelectorAll("#slider .dot");
+  var prevBtn = document.querySelector("#slider .prev");
+  var nextBtn = document.querySelector("#slider .next");
+  var currentSlide = 0;
+  var slideInterval;
+
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove("active");
+    dots[currentSlide].classList.remove("active");
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+  }
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function startAutoPlay() {
+    slideInterval = setInterval(nextSlide, 4000);
+  }
+
+  function resetAutoPlay() {
+    clearInterval(slideInterval);
+    startAutoPlay();
+  }
+
+  if (slides.length > 0) {
+    prevBtn.addEventListener("click", function () {
+      goToSlide(currentSlide - 1);
+      resetAutoPlay();
+    });
+
+    nextBtn.addEventListener("click", function () {
+      goToSlide(currentSlide + 1);
+      resetAutoPlay();
+    });
+
+    dots.forEach(function (dot) {
+      dot.addEventListener("click", function () {
+        goToSlide(parseInt(this.dataset.index));
+        resetAutoPlay();
+      });
+    });
+
+    startAutoPlay();
+  }
+
+  // Product filter
+  var filterBtns = document.querySelectorAll(".filerable-btns button");
+  var productCards = document.querySelectorAll("#products .cards .card");
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      filterBtns.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+
+      var filter = btn.dataset.filter;
+
+      productCards.forEach(function (card) {
+        if (filter === "all" || card.dataset.category === filter) {
+          card.classList.remove("hide");
+          card.classList.add("show");
+        } else {
+          card.classList.remove("show");
+          card.classList.add("hide");
+        }
+      });
     });
   });
 });
